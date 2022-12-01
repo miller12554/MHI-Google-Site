@@ -5,6 +5,13 @@ import Header from "./components/header/header";
 import Home from "./components/homepage/Home";
 import Navigation from "./components/navbar/navigation";
 import Contact from "./components/pages/Contact-Us/Contact";
+
+import Profile from "./components/pages/Google-Page/Profile";
+import SignIn from "./components/pages/Google-Page/SignIn";
+import SignUp from "./components/pages/Google-Page/Sign-Up";
+import Offers from "./components/pages/Google-Page/Offers";
+import ForgotPassword from "./components/pages/Google-Page/ForgotPassword";
+
 function App() {
   return (
     <>
@@ -14,6 +21,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/offers" element={<Offers />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
       </Router>
     </>

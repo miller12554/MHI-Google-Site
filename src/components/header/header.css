@@ -1,0 +1,15 @@
+.header-background {
+    background-color: #3f413f;
+    height: auto;
+}
+
+
+.logo {
+    max-height: 140px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+phone-icon {
+    padding-right: 55px;
+}

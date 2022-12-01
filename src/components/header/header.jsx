@@ -17,9 +17,7 @@ const header = () => {
                         <a href="tel:4849033307" onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});"><img src={PhoneIcon}
                             className=' d-block mx-auto img-fluid' /></a></Col>
                 </Row>
-                <Row>
-                    <p style={{ color: 'white' }} className="text-center"><Navigation /></p>
-                </Row>
+
             </div>
 
         </>

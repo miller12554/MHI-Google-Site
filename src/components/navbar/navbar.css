@@ -1,0 +1,51 @@
+.navRed {
+    background-color: red!important;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* text-shadow: 2px 2px black; */
+   margin-left: 12px;
+   margin-right: 12px;
+    
+}
+
+
+.dropdown-menu{
+    background-color: #3f413f;
+    
+    
+    } 
+
+    .dropdown-menu-list {
+        color:white;
+        height: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+    .dropdown-menu-list:active {
+        color:#ff0000;
+        font-weight: 700;
+        height: 14px;
+        letter-spacing: 2px;
+    }
+
+    .dropdown-menu-list:hover {
+        color:#ff0000;
+        font-weight: 700;
+        height: 14px;
+        letter-spacing: 2px;
+    }
+
+    
+    
+    

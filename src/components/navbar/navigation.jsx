@@ -24,10 +24,8 @@ function Navigation() {
 
 
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
+                        <Nav.Link className='link1' onClick={() => navigate("/ofers")}>Our Customers</Nav.Link>
+                        <Nav.Link className='link1' onClick={() => navigate("/signup")}>Sign In</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

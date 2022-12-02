@@ -1,5 +1,8 @@
+import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
 import { React, useState } from 'react'
+import { FcUndo } from 'react-icons/fc';
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify';
 import OAuth from '../Google-Page/OAuth';
 
 
@@ -13,7 +16,16 @@ export default function ForgotPassword() {
         setEmail(e.target.value)
     };
 
-
+    async function onSubmit(e) {
+        e.preventDefault();
+        try {
+            const auth = getAuth()
+            await sendPasswordResetEmail(auth, email)
+            toast.success("Email was sent")
+        } catch (error) {
+            toast.error("Could not send reset passsword")
+        }
+    }
     return (
         <section>
             <h1 className="text-3xl text-center mt-6 font-bold">Forgot Password</h1>
@@ -23,7 +35,7 @@ export default function ForgotPassword() {
                         class="w-full rounded-2xl" />
                 </div>
                 <div className="w-full md:w-[67%] lg:w-[40%] lg:ml-20">
-                    <form  >
+                    <form onSubmit={onSubmit} >
                         <input type="email" id="email" value={email}
                             onChange={onChange}
                             placeholder="Email"
@@ -32,11 +44,11 @@ export default function ForgotPassword() {
 
                         <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg">
                             <p className='mb-6'>Don't have an account?
-                                <Link to="/sign-up"
+                                <Link to="/signup"
                                     className='text-red-600 hover:text-red-700 transition duration-200 ease-in-out ml-4'>Register</Link>
                             </p>
                             <p>
-                                <Link to="/sign-in"
+                                <Link to="/signin"
                                     className='text-blue-600 hover:text-blue-700 transition duration-200 ease-in-out '>Sign In Instead</Link>
                             </p>
                         </div>

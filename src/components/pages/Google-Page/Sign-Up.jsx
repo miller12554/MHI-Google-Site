@@ -107,7 +107,7 @@ export default function SignUp() {
                             <p className="mb-6">
                                 Have a account?
                                 <Link
-                                    to="/signin"
+                                    to="/sign-in"
                                     className="text-red-600 hover:text-red-700 transition duration-200 ease-in-out ml-1"
                                 >
                                     Sign in
@@ -115,7 +115,7 @@ export default function SignUp() {
                             </p>
                             <p>
                                 <Link
-                                    to="/forgot-password"
+                                    to="/forgotpassword"
                                     className="text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out"
                                 >
                                     Forgot password?

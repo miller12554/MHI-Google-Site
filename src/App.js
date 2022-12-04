@@ -12,6 +12,8 @@ import SignUp from "./components/pages/Google-Page/Sign-Up";
 import Offers from "./components/pages/Google-Page/Offers";
 import ForgotPassword from "./components/pages/Google-Page/ForgotPassword";
 import CustomerPage from "./components/pages/Google-Page/CustomerPage";
+import PrivateRoutes from "./components/PrivateRoutes";
+
 function App() {
   return (
     <>
@@ -25,7 +27,9 @@ function App() {
 
         <Routes>
           <Route path="/customerpage" element={<CustomerPage />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<PrivateRoutes />}>
+            <Route path="/profile" element={<Profile />} />
+          </Route>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/offers" element={<Offers />} />

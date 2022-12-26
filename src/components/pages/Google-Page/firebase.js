@@ -5,13 +5,15 @@ import { getFirestore } from "firebase/firestore";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// Your web app's Firebase configuration
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAaJg-Bpv8w3zdPYjbpBk9F0I4MpLVBXjo",
-  authDomain: "realtor-clone-react-7c6f9.firebaseapp.com",
-  projectId: "realtor-clone-react-7c6f9",
-  storageBucket: "realtor-clone-react-7c6f9.appspot.com",
-  messagingSenderId: "225391435347",
-  appId: "1:225391435347:web:e7f1fe50297f32032970a6",
+  apiKey: "AIzaSyAux0ZPLV_5PApAvuUkjnbPPz1k5oc4ss4",
+  authDomain: "millers-home-improvement-5d1ca.firebaseapp.com",
+  projectId: "millers-home-improvement-5d1ca",
+  storageBucket: "millers-home-improvement-5d1ca.appspot.com",
+  messagingSenderId: "598698205886",
+  appId: "1:598698205886:web:c0ca1d35c3190cda5174ef",
 };
 
 // Initialize Firebase

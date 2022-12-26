@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ToastContainer } from "react-toastify";
@@ -5,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Header from "./components/header/header";
 import Home from "./components/homepage/Home";
 import Navigation from "./components/navbar/navigation";
-import Contact from "./components/pages/Contact-Us/Contact";
+// import Contact from "./components/pages/Contact-Us/Contact";
 import Profile from "./components/pages/Google-Page/Profile";
 import SignIn from "./components/pages/Google-Page/SignIn";
 import SignUp from "./components/pages/Google-Page/Sign-Up";
@@ -15,6 +16,8 @@ import CustomerPage from "./components/pages/Google-Page/CustomerPage";
 import PrivateRoutes from "./components/PrivateRoutes";
 
 function App() {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <>
       <Router>
@@ -22,7 +25,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
 
         <Routes>

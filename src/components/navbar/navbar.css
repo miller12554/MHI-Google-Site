@@ -27,21 +27,30 @@
    margin-right: 12px;
     
 }
-
-
 .dropdown-menu{
+    background-color: #3f413f;
+    width: 100%;
+}
+
+.dropdown-item {
+    color:white;
+   
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+/* .dropdown-menu{
     background-color: #3f413f;
     
     
     } 
 
-    .dropdown-menu-list {
+    
+    .dropdown-item {
         color:white;
         height: 14px;
         font-weight: 700;
         letter-spacing: 2px;
     }
-
 
     .dropdown-menu-list:active {
         color:#ff0000;
@@ -55,7 +64,7 @@
         font-weight: 700;
         height: 14px;
         letter-spacing: 2px;
-    }
+    } */
 
     
     

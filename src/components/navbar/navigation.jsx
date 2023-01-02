@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import React from 'react';
 import './navbar.css'
 import ContactModal from '../pages/Contact-Us/ContactModal';
-import HandyMan from '../pages/HandyMan/HandyMan';
 function Navigation() {
     const [modalShow, setModalShow] = React.useState(false);
     const navigate = useNavigate();
@@ -25,15 +24,16 @@ function Navigation() {
 
                         <Nav.Link onClick={() => navigate("/handyman")}>Handy-Man Services</Nav.Link>
 
-                        <NavDropdown title="Remodeling Services" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">
-                                Something else here
-                            </NavDropdown.Item>
+                        <NavDropdown title="Remodeling Services"
+                            id="nav-dropdown" >
+                            <NavDropdown.Item onClick={() => navigate("/bathrooms")}><p className='dropdown-menu-list'>Bathrooms</p></NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate("/kitchens")}><p className='dropdown-menu-list'>Kitchens</p></NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate("/basements")}><p className='dropdown-menu-list'>Basements</p></NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate("/otherremodeling")}><p className='dropdown-menu-list'>Interior / Exterior</p></NavDropdown.Item>
+
+                            <NavDropdown.Item onClick={() => navigate("/photogallerymain")}><p className='dropdown-menu-list'>Photo Gallerys</p></NavDropdown.Item>
+
+
                         </NavDropdown>
 
 

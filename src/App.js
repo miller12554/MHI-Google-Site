@@ -14,6 +14,12 @@ import Offers from "./components/pages/Google-Page/Offers";
 import ForgotPassword from "./components/pages/Google-Page/ForgotPassword";
 import CustomerPage from "./components/pages/Google-Page/CustomerPage";
 import PrivateRoutes from "./components/PrivateRoutes";
+import HandyMan from "./components/pages/HandyMan/HandyMan";
+import Bathrooms from "./components/pages/bathrooms/Bathrooms";
+import Kitchens from "./components/pages/Kitchens/Kitchens";
+import Basements from "./components/pages/Basements/Basements";
+import PhotoGalleryMain from "./components/PhotoGallery/PhotoGalleryMain";
+import OtherRemodeling from "./components/pages/OtherRemodeling/OtherRemodeling";
 
 function App() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -25,7 +31,13 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/handyman" element={<HandyMan />} />
+          <Route path="/bathrooms" element={<Bathrooms />} />
+          <Route path="/kitchens" element={<Kitchens />} />
+
+          <Route path="/basements" element={<Basements />} />
+          <Route path="/otherremodeling" element={<OtherRemodeling />} />
+          <Route path="/photogallerymain" element={<PhotoGalleryMain />} />
         </Routes>
 
         <Routes>

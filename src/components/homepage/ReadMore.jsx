@@ -29,7 +29,8 @@ const Content = () => {
                     and also have fun! Free Tutorials, Millions of Articles, Live,
                     Online and Classroom Courses ,Frequent Coding Competitions,
                     Webinars by Industry Experts, Internship opportunities, and Job
-                    Opportunities. Knowledge is power!
+                    Opportunities. Knowledge is power! aaaaa
+
                 </ReadMore>
             </h2>
         </div>

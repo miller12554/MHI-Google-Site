@@ -20,6 +20,7 @@ import Kitchens from "./components/pages/Kitchens/Kitchens";
 import Basements from "./components/pages/Basements/Basements";
 import PhotoGalleryMain from "./components/PhotoGallery/PhotoGalleryMain";
 import OtherRemodeling from "./components/pages/OtherRemodeling/OtherRemodeling";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -29,6 +30,7 @@ function App() {
       <Router>
         <Header />
         <Navigation />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/handyman" element={<HandyMan />} />
@@ -39,7 +41,7 @@ function App() {
           <Route path="/otherremodeling" element={<OtherRemodeling />} />
           <Route path="/photogallerymain" element={<PhotoGalleryMain />} />
         </Routes>
-
+        <Footer />
         <Routes>
           <Route path="/customerpage" element={<CustomerPage />} />
           <Route path="/profile" element={<PrivateRoutes />}>
@@ -51,6 +53,7 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
       </Router>
+
       <ToastContainer
         toastStyle={{ backgroundColor: "#3f413f", fontSize: "bold" }}
         position="top-center"
